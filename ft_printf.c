@@ -6,13 +6,11 @@
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/25 15:58:55 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/06/26 02:37:33 by mfeldman         ###   ########.fr       */
+/*   Updated: 2022/06/26 14:57:07 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-#include "./libft/libft.h"
-
 
 int check_first_param()
 {
