@@ -6,7 +6,7 @@
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/25 15:58:55 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/06/27 00:24:30 by mfeldman         ###   ########.fr       */
+/*   Updated: 2022/06/27 01:08:30 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int first_param(const char *str)
 {
     if (check_first_param(str) == 0)
         printf("%s", "oui");   
-    return(1);
+    return(1); /* foret de if */
 }
 
 
