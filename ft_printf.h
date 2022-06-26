@@ -6,7 +6,7 @@
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/25 17:59:31 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/06/26 02:37:15 by mfeldman         ###   ########.fr       */
+/*   Updated: 2022/06/26 02:41:22 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,4 +22,5 @@
 
 int ft_printf(const char *str, ...);
 int first_param(char *str1,const char *str2);
+size_t	ft_strlen(const char *s);
 #endif
