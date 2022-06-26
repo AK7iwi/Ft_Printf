@@ -6,7 +6,7 @@
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/25 17:59:31 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/06/26 17:06:18 by mfeldman         ###   ########.fr       */
+/*   Updated: 2022/06/26 17:30:02 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 # include <unistd.h>
 # include <string.h>
 # include <stdio.h>
-
+# include "./libft/libft.h"
 
 int ft_printf(const char *str, ...);
 int first_param(char *str1,const char *str2);
