@@ -6,7 +6,7 @@
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/25 15:58:55 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/06/26 02:34:56 by mfeldman         ###   ########.fr       */
+/*   Updated: 2022/06/26 02:37:33 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 
 int check_first_param()
 {
-    
+    return(0);
 }
 
 int first_param(char *str1, const char *str2)  /* va_list*/
