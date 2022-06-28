@@ -10,17 +10,18 @@ LIBFT 			= ./libft/libft.a
 all:			$(NAME) 
 
 $(NAME):		$(OBJS)
-				$(MAKE) all -C ./libft 
+				make all -C ./libft 
 				cp libft/libft.a $(NAME)
 				ar rcs $(NAME) $(OBJS)
 
-clean:		
-				$(MAKE) clean -C ./libft
-				$(RM) $(OBJS) 
-
-fclean:			clean
-				$(MAKE) fclean -C ./libft
+clean:			
+				make clean -C ./libft
+				$(RM) $(OBJS)
+				 
+fclean:	 		
+				make  fclean -C ./libft
 				$(RM) $(NAME)
+				$(RM) $(OBJS) 
 
 re:				fclean $(NAME)
 
