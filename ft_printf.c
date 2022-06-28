@@ -6,46 +6,45 @@
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/25 15:58:55 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/06/27 01:08:30 by mfeldman         ###   ########.fr       */
+/*   Updated: 2022/06/28 21:50:08 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int check_first_param(const char *str)
+int first_param(const char *str1,char *str2) 
 {
-    int i = strlen(str);  // ft_strlen
- 
-    while(i > 0)
-    {
-        if (str[1 + strlen(str) - i] != 'c'||'s'||'p'||'d'||'i'||'u'||'x'||'X'||'%') /* +2 */  // ft_strlen
-            return(0);
-        i -= 2;
-    }
-    return(1);
-}
-
-int first_param(const char *str) 
-{
-    if (check_first_param(str) == 0)
-        printf("%s", "oui");   
-    return(1); /* foret de if */
+    if (str == 'c')
+        write(1, str2,1);
+    if (str == 's')
+        write(1, str2,ft_strlen(str2));
+    if (str == 'p')
+    
+    if (str == 'd')
+        ft_putnbr_fd()
+    if (str == 'i')
+        ft_putnbr_fd()
+    if (str == 'u')
+    
+    if (str == 'x')
+    
+    if (str == 'X')
+    
+    if (str == '%')
+        write(1, '%',1);
 }
 
 
 int ft_printf(const char *str, ...)
 {
+    i =  ft_strlen(str);
     va_list ap;
     va_start(ap,str);
-    const char *val = va_arg(ap, const char *); // malloc/free ici 
-    first_param((char *)str,val);
+    while (i > 0)
+    {
+        first_param(str[],va_arg(ap,char *));
+        i = i -2;
+    }
     va_end(ap);
     return(ft_strlen(val));
-}
-
-int main()
-{   
-    const char *str;
-    str = "%u%i%u";
-    first_param(str);
 }
