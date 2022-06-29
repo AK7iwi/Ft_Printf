@@ -6,7 +6,7 @@
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/25 15:58:55 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/06/29 05:43:32 by mfeldman         ###   ########.fr       */
+/*   Updated: 2022/06/29 08:09:28 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,6 @@ void first_param(const char str1,char *str2)
     if (str1 == '%')
         write(1, "%",1);
 }
-
 
 int ft_printf(const char *str, ...)
 {
@@ -39,7 +38,6 @@ int ft_printf(const char *str, ...)
         else 
             return(0);
     }
+    return(8);
     va_end(ap);
 }
-
-
