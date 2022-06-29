@@ -6,31 +6,31 @@
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/25 15:58:55 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/06/29 01:21:26 by mfeldman         ###   ########.fr       */
+/*   Updated: 2022/06/29 04:02:58 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-/*
+
 int first_param(const char *str1,char *str2) 
 {
-    if (str == 'c')
+    if (str1 == 'c')
         write(1, str2,1);
-    if (str == 's')
+    if (str1 == 's')
         write(1, str2,ft_strlen(str2));
     if (str == 'p')
     
-    if (str == 'd')
+    if (str1 == 'd')
         ft_putnbr_fd()
-    if (str == 'i')
+    if (str1 == 'i')
         ft_putnbr_fd()
-    if (str == 'u')
+    if (str1 == 'u')
     
-    if (str == 'x')
+    if (str1 == 'x')
     
-    if (str == 'X')
+    if (str1 == 'X')
     
-    if (str == '%')
+    if (str1 == '%')
         write(1, '%',1);
 }
 
@@ -52,4 +52,3 @@ int ft_printf(const char *str, ...)
     va_end(ap);
     return(ft_strlen(val));
 }
-*/
