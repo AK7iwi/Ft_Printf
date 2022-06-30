@@ -6,7 +6,7 @@
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/25 15:58:55 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/06/30 08:01:12 by mfeldman         ###   ########.fr       */
+/*   Updated: 2022/06/30 17:04:29 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,5 +40,5 @@ int ft_printf(const char *str, ...)
 
 int main()
 {
-    ft_printf("oui", "non");
+    printf("oui");
 }
