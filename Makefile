@@ -3,17 +3,17 @@ RM				= rm -f
 CFLAGS			= -c  -Wall -Wextra -Werror -I.
 NAME			= libftprint.a
 OBJS			= $(SRCS:.c=.o)
-SRCS			= ft_printf.c \
+SRCS			= ft_printf.c main.c\
 
 LIBFT 			= ./libft/libft.a
 
-all:			$(NAME) 
-
 $(NAME):		$(OBJS)
 				$(CC) $(SRCS) $(CFLAGS) 
-				make all -C ./libft 
+				make all bonus -C ./libft 
 				cp libft/libft.a $(NAME)
 				ar rcs $(NAME) $(OBJS)
+
+all:			$(NAME) 
 
 clean:			
 				$(RM) $(OBJS)
