@@ -1,9 +1,9 @@
 CC				= gcc
 RM				= rm -f
-CFLAGS			= -Wall -Wextra -Werror -I.
+CFLAGS			=-Wall -Wextra -Werror -I.
 NAME			= libftprint.a
 OBJS			= $(SRCS:.c=.o)
-SRCS			= ft_printf.c main.c\
+SRCS			= ft_printf.c \
 
 LIBFT 			= ./libft/libft.a
 
