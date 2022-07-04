@@ -8,9 +8,9 @@ SRCS			= ft_printf.c main.c\
 LIBFT 			= ./libft/libft.a
 
 $(NAME):		$(OBJS)
-				$(CC) $(SRCS) $(CFLAGS) 
-				make all bonus -C ./libft 
+				make -C ./libft 
 				cp libft/libft.a $(NAME)
+				$(CC) $(SRCS) $(CFLAGS) 
 				ar rcs $(NAME) $(OBJS)
 
 all:			$(NAME) 

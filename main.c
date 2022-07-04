@@ -2,5 +2,5 @@
 
 int main()
 {
-    printf("ouhji");
+    ft_printf("%c","OUi");
 }
