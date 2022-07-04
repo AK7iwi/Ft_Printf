@@ -2,5 +2,5 @@
 
 int main()
 {
-    ft_printf("%c","OUi");
+    ft_printf("%c%c","pOUi","non");
 }
