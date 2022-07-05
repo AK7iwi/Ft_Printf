@@ -1,16 +1,15 @@
-CC				= gcc
+CC				= gcc 
 RM				= rm -f
 CFLAGS			= -Wall -Wextra -Werror -I.
 NAME			= libftprint.a
 OBJS			= $(SRCS:.c=.o)
+LDLIBS 			= ./libft/libft.a
 SRCS			= ft_printf.c main.c\
-
-LIBFT 			= ./libft/libft.a
 
 $(NAME):		$(OBJS)
 				make -C ./libft 
 				cp libft/libft.a $(NAME)
-				$(CC) $(SRCS) $(CFLAGS) 
+				$(CC) $(SRCS) $(LDLIBS) $(CFLAGS) 
 				ar rcs $(NAME) $(OBJS)
 
 all:			$(NAME) 
