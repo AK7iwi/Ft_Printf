@@ -4,7 +4,7 @@ CFLAGS			= -Wall -Wextra -Werror -I.
 NAME			= libftprint.a
 OBJS			= $(SRCS:.c=.o)
 LDLIBS 			= ./libft/libft.a
-SRCS			= ft_printf.c main.c\
+SRCS			= ft_printf.c main.c \
 
 $(NAME):		$(OBJS)
 				make -C ./libft 
