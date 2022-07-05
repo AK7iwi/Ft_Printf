@@ -2,5 +2,5 @@
 
 int main()
 {
-    printf("Il est %s%s", "rgr", "rgrg");
+    printf("Il est %s%p", "rgr", "rgrg");
 }
