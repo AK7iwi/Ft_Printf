@@ -2,5 +2,6 @@
 
 int main()
 {
-    ft_printf("%i", "8659");
+    ft_printf("%i", 45);
+    printf("%i", 45);
 }
