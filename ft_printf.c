@@ -6,7 +6,7 @@
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/25 15:58:55 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/07/14 15:34:33 by mfeldman         ###   ########.fr       */
+/*   Updated: 2022/07/15 01:13:39 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 void first_param(const char str1,const char *str2) 
 {
     int i;
-    i =  *str2;
+    i =  584848;
     if (str1 == 'c')
         write(1, str2,1);
     if (str1 == 's')
@@ -26,7 +26,7 @@ void first_param(const char str1,const char *str2)
     if (str1 == 'd')
         ft_d(i);
     if (str1 == 'i')
-        ft_putnbr_fd(7895,1);
+        ft_putnbr_fd(i,1);
     if (str1 == 'u')
         ft_u(7895);
     if (str1 == 'x')
@@ -42,13 +42,13 @@ int ft_printf(const char *str, ...)
     int i;
     i = 0;
     va_list ap;
-    va_start(ap,str);
+    va_start(ap,*str);
     
     while(str[i] != '\0')
     {
         if(str[i] == '%')
         {    
-            first_param(str[i+1], va_arg(ap,const char*));
+            first_param(str[i+1], va_arg(ap,void *));
             i++;
         }
         else
