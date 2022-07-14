@@ -2,8 +2,5 @@
 
 int main()
 {
-    ft_printf("%s%p","pOUi","iuo");
-    printf("\n");
-    printf("%s%p","pOUi","iuo");
-    
+    ft_printf("%i", "8659");
 }
