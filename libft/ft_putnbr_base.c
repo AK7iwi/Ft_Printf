@@ -1,38 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*   ft_putnbr_base.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/11 19:27:18 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/05/19 15:57:34 by mfeldman         ###   ########.fr       */
+/*   Created: 2022/07/15 19:10:41 by mfeldman          #+#    #+#             */
+/*   Updated: 2022/07/15 19:12:33 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memmove(void *dst, const void *src, size_t len)
+void	ft_putnbr_base(unsigned long long int nb, char *base)
 {
-	char	*s;
-	char	*d;
-	size_t	i;
-
-	s = (char *)src;
-	d = (char *)dst;
-	i = 0;
-	if (!dst && !src)
-		return (NULL);
-	if (d > s)
-		while (len-- > 0)
-			d[len] = s[len];
-	else
+	if (nb >= 16)
 	{
-		while (i < len)
-		{
-			d[i] = s[i];
-			i++;
-		}
+		ft_putnbr_base(nb / 16, base);
+		write(1, &base[nb % 16], 1);
 	}
-	return (dst);
+	else
+		write(1, &base[nb], 1);
 }
