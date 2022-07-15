@@ -12,16 +12,9 @@
 
 #include "ft_printf.h"
 
-void	ft_p(int b)
+void	ft_p(void *str)
 {
-	char *base;
-	base = "0123456789abcdef";
+	write(1, "0x",2);
 	
-	if (b <= 15)
-		ft_putchar_fd((base[b -(b % 16)]), 1);
-	else if (b > 15)
-	{
-		ft_p(b / 16);
-		ft_putchar_fd('0' + b % 16, 1);
-	}
+	ft_putnbr_base(str);
 }

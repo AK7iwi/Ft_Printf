@@ -19,9 +19,9 @@ void first_param(const char str1, va_list ap)
         ft_c(va_arg(ap,int));
     if (str1 == 's')
         ft_s(va_arg(ap,const char *));
-    /*if (str1 == 'p')
-        ft_p(i);
-    if (str1 == 'd')
+    if (str1 == 'p')
+        ft_p(va_arg(ap, void *));
+    /*if (str1 == 'd')
         ft_d(i);
     if (str1 == 'i')
         ft_putnbr_fd(i,1);

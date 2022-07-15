@@ -3,5 +3,5 @@
 int main()
 {
   
-    ft_printf("%c", 5485);
+    ft_printf("%p", "fr5485");
 }
