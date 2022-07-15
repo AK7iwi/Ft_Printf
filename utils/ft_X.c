@@ -1,15 +1,20 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_X.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/07/15 23:09:58 by mfeldman          #+#    #+#             */
+/*   Updated: 2022/07/15 23:11:55 by mfeldman         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "ft_printf.h"
 
-void	ft_X(int b)
+void ft_X(unsigned int nb)
 {
-	char *base;
-	base = "0123456789abcdef";
-	
-	if (b <= 15)
-		ft_putchar_fd((base[b -(b % 16)]), 1);
-	else if (b > 15)
-	{
-		ft_p(b / 16);
-		ft_putchar_fd('0' + b % 16, 1);
-	}
+	unsigned long long int nb2 = (unsigned long long int)nb;
+	ft_putnbr_base(nb2,"0123456789ABCDEF");
+
 }

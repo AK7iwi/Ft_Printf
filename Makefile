@@ -5,7 +5,7 @@ NAME			= libftprint.a
 OBJS			= $(SRCS:.c=.o)
 LDLIBS 			= ./libft/libft.a
 SRCS			= 	ft_printf.c main.c ./utils/ft_c.c ./utils/ft_s.c ./utils/ft_p.c ./utils/ft_d.c\
-					./utils/ft_i.c ./utils/ft_u.c\
+					./utils/ft_i.c ./utils/ft_u.c ./utils/ft_x.c ./utils/ft_X.c\
 
 
 $(NAME):		$(OBJS)

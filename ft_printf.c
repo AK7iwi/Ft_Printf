@@ -27,12 +27,12 @@ void first_param(const char str1, va_list ap)
         ft_i(va_arg(ap,int));
     if (str1 == 'u')
         ft_u(va_arg(ap, unsigned int));
-    /*iif (str1 == 'x')
-        ft_x(7895);
+    if (str1 == 'x')
+        ft_x(va_arg(ap, unsigned int));
     if (str1 == 'X')
-        ft_X(7895);
+        ft_X(va_arg(ap, unsigned int));
     if (str1 == '%')
-        write(1, "%",1);*/
+        write(1, "%",1);
 }
 
 int ft_printf(const char *str, ...)

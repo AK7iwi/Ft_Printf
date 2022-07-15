@@ -2,7 +2,7 @@
 
 int main()
 {
-    ft_printf("%u", 4294967295);
+    ft_printf("%X", 4429496);
     printf("%s", "\n");
-    printf("%u", 2147483647);
+    printf("%X", 4429496);
 }

@@ -25,7 +25,7 @@ void	ft_p(void *str);
 void	ft_d(int nb);
 void	ft_i(int nb);
 void	ft_u(unsigned int nb);
-void	ft_x(int b);
-void	ft_X(int b);
+void	ft_x(unsigned int nb);
+void	ft_X(unsigned int nb);
 
 #endif
