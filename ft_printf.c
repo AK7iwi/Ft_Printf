@@ -15,13 +15,11 @@
 
 void first_param(const char str1, va_list ap) 
 {
-    int i;
-    i =  584848;
     if (str1 == 'c')
-        write(1, str2,1);
+        ft_c(va_arg(ap,int));
     if (str1 == 's')
-        write(1, str2,ft_strlen(str2));
-    if (str1 == 'p')
+        ft_s(va_arg(ap,const char *));
+    /*if (str1 == 'p')
         ft_p(i);
     if (str1 == 'd')
         ft_d(i);
@@ -34,7 +32,7 @@ void first_param(const char str1, va_list ap)
     if (str1 == 'X')
         ft_X(7895);
     if (str1 == '%')
-        write(1, "%",1);
+        write(1, "%",1);*/
 }
 
 int ft_printf(const char *str, ...)

@@ -18,7 +18,9 @@
 
 
 int ft_printf(const char *str, ...);
-void first_param(const char str1,const char *str2);
+void first_param(const char str1, va_list ap); 
+void    ft_c(int i);
+void    ft_s(const char *str);
 void	ft_p(int b);
 void	ft_d(int b);
 void	ft_u(int b);

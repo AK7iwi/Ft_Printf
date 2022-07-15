@@ -2,5 +2,5 @@
 
 int main()
 {
-    printf("%p","15");
+    printf("%c",'fefefa');
 }

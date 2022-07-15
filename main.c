@@ -2,5 +2,6 @@
 
 int main()
 {
-    ft_printf("%s", "ththth");
+  
+    ft_printf("%c", 5485);
 }
