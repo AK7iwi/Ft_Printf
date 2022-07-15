@@ -21,13 +21,13 @@ void first_param(const char str1, va_list ap)
         ft_s(va_arg(ap,const char *));
     if (str1 == 'p')
         ft_p(va_arg(ap, void *));
-    /*if (str1 == 'd')
-        ft_d(i);
+    if (str1 == 'd')
+        ft_d(va_arg(ap,int));
     if (str1 == 'i')
-        ft_putnbr_fd(i,1);
+        ft_i(va_arg(ap,int));
     if (str1 == 'u')
-        ft_u(7895);
-    if (str1 == 'x')
+        ft_u(va_arg(ap, unsigned int));
+    /*iif (str1 == 'x')
         ft_x(7895);
     if (str1 == 'X')
         ft_X(7895);

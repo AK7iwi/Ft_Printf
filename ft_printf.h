@@ -22,8 +22,9 @@ void first_param(const char str1, va_list ap);
 void    ft_c(int i);
 void    ft_s(const char *str);
 void	ft_p(void *str);
-void	ft_d(int b);
-void	ft_u(int b);
+void	ft_d(int nb);
+void	ft_i(int nb);
+void	ft_u(unsigned int nb);
 void	ft_x(int b);
 void	ft_X(int b);
 

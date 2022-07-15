@@ -2,9 +2,7 @@
 
 int main()
 {
-    char *a;
-    a = "gjerogjr";
-    ft_printf("%p", a);
+    ft_printf("%u", 4294967295);
     printf("%s", "\n");
-    ft_printf("%p", a);
+    printf("%u", 2147483647);
 }

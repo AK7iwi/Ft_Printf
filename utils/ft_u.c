@@ -1,15 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_u.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/07/15 22:50:26 by mfeldman          #+#    #+#             */
+/*   Updated: 2022/07/15 22:50:26 by mfeldman         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "ft_printf.h"
 
-void	ft_u(int b)
+void	ft_u(unsigned int nb)
 {
-	char *base;
-	base = "0123456789abcdef";
-	
-	if (b <= 15)
-		ft_putchar_fd((base[b -(b % 16)]), 1);
-	else if (b > 15)
-	{
-		ft_p(b / 16);
-		ft_putchar_fd('0' + b % 16, 1);
-	}
+	ft_putnbr_fdu(nb,1);
 }
