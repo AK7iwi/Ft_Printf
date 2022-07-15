@@ -2,6 +2,9 @@
 
 int main()
 {
-  
-    ft_printf("%p", "fr5485");
+    char *a;
+    a = "gjerogjr";
+    ft_printf("%p", a);
+    printf("%s", "\n");
+    ft_printf("%p", a);
 }
