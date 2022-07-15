@@ -13,7 +13,7 @@
 #include "ft_printf.h"
 
 
-void first_param(const char str1,const char *str2) 
+void first_param(const char str1, va_list ap) 
 {
     int i;
     i =  584848;
@@ -48,7 +48,7 @@ int ft_printf(const char *str, ...)
     {
         if(str[i] == '%')
         {    
-            first_param(str[i+1], va_arg(ap,void *));
+            first_param(str[i+1], ap);
             i++;
         }
         else
