@@ -1,20 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_X.c                                             :+:      :+:    :+:   */
+/*   ft_pour.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/15 23:09:58 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/07/17 00:37:52 by mfeldman         ###   ########.fr       */
+/*   Created: 2022/07/17 00:22:09 by mfeldman          #+#    #+#             */
+/*   Updated: 2022/07/17 00:27:41 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int ft_X(unsigned int nb)
+int    ft_pour()
 {
-	unsigned long long int nb2 = (unsigned long long int)nb;
-	ft_putnbr_base(nb2,"0123456789ABCDEF");
-
+    write(1, "%",1);
+    return(1);
 }

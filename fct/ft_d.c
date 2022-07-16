@@ -12,7 +12,7 @@
 
 #include "ft_printf.h"
 
-void	ft_d(int nb)
+int	ft_d(int nb)
 {
 	ft_putnbr_fd(nb,1);
 }

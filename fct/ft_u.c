@@ -12,7 +12,7 @@
 
 #include "ft_printf.h"
 
-void	ft_u(unsigned int nb)
+int	ft_u(unsigned int nb)
 {
 	ft_putnbr_fdu(nb,1);
 }

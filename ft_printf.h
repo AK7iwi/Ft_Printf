@@ -10,22 +10,22 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef PRINTF_H
-# define PRINTF_H
+#ifndef FT_PRINTF_H
+# define FT_PRINTF_H
 
 # include "./libft/libft.h"
 # include <stdarg.h>
 
-
-int ft_printf(const char *str, ...);
-void first_param(const char str1, va_list ap); 
-void    ft_c(int i);
-void    ft_s(const char *str);
-void	ft_p(void *str);
-void	ft_d(int nb);
-void	ft_i(int nb);
-void	ft_u(unsigned int nb);
-void	ft_x(unsigned int nb);
-void	ft_X(unsigned int nb);
+int		ft_printf(const char *str, ...);
+int		first_param(const char str1, va_list ap);
+int	ft_c(int i);
+int	ft_s(const char *str);
+int	ft_p(void *str);
+int	ft_d(int nb);
+int	ft_i(int nb);
+int	ft_u(unsigned int nb);
+int	ft_x(unsigned int nb);
+int	ft_X(unsigned int nb);
+int		ft_pour();
 
 #endif

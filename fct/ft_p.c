@@ -12,7 +12,7 @@
 
 #include "ft_printf.h"
 
-void	ft_p(void *str)
+int	ft_p(void *str)
 {
 	unsigned long long int str2 = (unsigned long long int)str;
  	write(1, "0x",2);

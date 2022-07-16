@@ -12,9 +12,11 @@
 
 #include "ft_printf.h"
 
-void ft_x(unsigned int nb)
+int ft_x(unsigned int nb)
 {
 	unsigned long long int nb2 = (unsigned long long int)nb;
 	ft_putnbr_base(nb2,"0123456789abcdef");
+	
+
 
 }
