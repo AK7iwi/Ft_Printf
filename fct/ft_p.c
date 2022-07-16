@@ -16,5 +16,5 @@ int	ft_p(void *str)
 {
 	unsigned long long int str2 = (unsigned long long int)str;
  	write(1, "0x",2);
-	ft_putnbr_base(str2,"0123456789abcdef");
+	return(ft_putnbr_ibase(str2,"0123456789abcdef"));
 }

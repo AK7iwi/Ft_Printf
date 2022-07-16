@@ -1,18 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_i.c                                             :+:      :+:    :+:   */
+/*   ft_putnbr_ifd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/15 22:43:55 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/07/17 01:34:08 by mfeldman         ###   ########.fr       */
+/*   Created: 2022/07/17 01:30:25 by mfeldman          #+#    #+#             */
+/*   Updated: 2022/07/17 01:31:29 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "libft.h"
 
-int	ft_i(int nb)
+int	ft_putnbr_ifd(int n, int fd)
 {
-	return(ft_putnbr_ifd(nb,1));
+    int i;
+    i = 0;
+	long long	b;
+
+	b = n;
+	if (b < 0)
+	{
+		ft_putchar_fd('-', fd);
+		b *= -1;
+        i++;
+	}
+	if (b <= 9)
+    {
+		ft_putchar_fd('0' + b, fd);
+        i++;
+    }
+	else if (b > 9)
+	{
+		ft_putnbr_fd(b / 10, fd);
+		ft_putchar_fd('0' + b % 10, fd);
+        i++;
+	}
+    return(i);
 }

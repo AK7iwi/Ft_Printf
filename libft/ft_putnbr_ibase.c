@@ -1,18 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_i.c                                             :+:      :+:    :+:   */
+/*   ft_putnbr_ibase.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/15 22:43:55 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/07/17 01:34:08 by mfeldman         ###   ########.fr       */
+/*   Created: 2022/07/17 01:17:33 by mfeldman          #+#    #+#             */
+/*   Updated: 2022/07/17 01:29:35 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "libft.h"
 
-int	ft_i(int nb)
+int	ft_putnbr_ibase(unsigned long long int nb, char *base)
 {
-	return(ft_putnbr_ifd(nb,1));
+    int	i;
+    i =  0;
+	if (nb >= 16)
+	{
+		ft_putnbr_base(nb / 16, base);
+		write(1, &base[nb % 16], 1);
+		i++;
+	}
+	else
+	{
+		write(1, &base[nb], 1);
+		i++;
+	}
+	return(i);
 }

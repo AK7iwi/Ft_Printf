@@ -26,6 +26,6 @@ int	ft_i(int nb);
 int	ft_u(unsigned int nb);
 int	ft_x(unsigned int nb);
 int	ft_X(unsigned int nb);
-int		ft_pour();
+int	ft_pour();
 
 #endif
