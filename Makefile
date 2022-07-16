@@ -4,14 +4,14 @@ CFLAGS			= -Wall -Wextra -Werror -I.
 NAME			= libftprint.a
 OBJS			= $(SRCS:.c=.o)
 LDLIBS 			= ./libft/libft.a
-SRCS			=  ft_printf.c ./utils/ft_c.c ./utils/ft_s.c ./utils/ft_p.c ./utils/ft_d.c\
-					./utils/ft_i.c ./utils/ft_u.c ./utils/ft_x.c ./utils/ft_X.c\
+SRCS			=  ft_printf.c ./fct/ft_c.c ./fct/ft_s.c ./fct/ft_p.c ./fct/ft_d.c\
+					./fct/ft_i.c ./fct/ft_u.c ./fct/ft_x.c ./fct/ft_X.c\
 
 
 $(NAME):		$(OBJS)
 				make -C ./libft 
 				cp libft/libft.a $(NAME)
-				$(CC) $(SRCS) $(LDLIBS) $(CFLAGS) 
+				$(CC) $(SRCS)  $(LDLIBS) $(CFLAGS) 
 				ar rcs $(NAME) $(OBJS)
 
 all:			$(NAME) 
