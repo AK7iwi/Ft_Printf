@@ -1,24 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_uintlen.c                                       :+:      :+:    :+:   */
+/*   ft_hexlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/17 20:10:36 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/07/17 20:27:21 by mfeldman         ###   ########.fr       */
+/*   Created: 2022/07/17 20:59:17 by mfeldman          #+#    #+#             */
+/*   Updated: 2022/07/17 21:15:04 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t  ft_uintlen(unsigned int nb)
+size_t	ft_hexlen(int nb)
 {
 	size_t	i;
 
 	i = 0;
 	while (nb)
 		i++;
-        nb = nb / 10;
+        nb = nb / 16;
 	return (i);
 }

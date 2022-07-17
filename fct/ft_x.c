@@ -15,5 +15,6 @@
 int ft_x(unsigned int nb)
 {
 	unsigned long long int nb2 = (unsigned long long int)nb;
-	return(ft_putnbr_base(nb2,"0123456789abcdef"));
+	ft_putnbr_base(nb2,"0123456789abcdef");
+	return(ft_hexlen(nb2));
 }
