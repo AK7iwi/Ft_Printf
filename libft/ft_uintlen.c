@@ -6,7 +6,7 @@
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/17 20:10:36 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/07/17 21:27:02 by mfeldman         ###   ########.fr       */
+/*   Updated: 2022/07/17 23:07:11 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,9 @@ size_t  ft_uintlen(unsigned int nb)
 
 	i = 0;
 	while (nb)
+	{
 		i++;
         nb = nb / 10;
+	}
 	return (i);
 }

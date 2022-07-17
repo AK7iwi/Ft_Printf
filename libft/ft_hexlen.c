@@ -6,7 +6,7 @@
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/17 20:59:17 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/07/17 21:35:26 by mfeldman         ###   ########.fr       */
+/*   Updated: 2022/07/17 23:06:47 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,9 @@ size_t	ft_hexlen(int nb)
 
 	i = 0;
 	while (nb)
+	{
 		i++;
         nb = nb / 16;
+	}
 	return (i);
 }
