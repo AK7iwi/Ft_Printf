@@ -14,7 +14,7 @@
 
 int	ft_u(unsigned int nb)
 {
-	int a;
-	a = ft_putnbr_ifdu(nb,1);
-	return(a);
+	
+	return(ft_putnbr_ifdu(nb,1));
+	
 }
