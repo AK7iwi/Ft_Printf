@@ -3,7 +3,7 @@
 
 int main()
 {
-    printf("%d",ft_printf("%X",48548564465));
+    printf("%d",ft_printf("%X",4485478));
     printf("\n");
-    printf("%p","efef");
+    printf("%d",printf("%X",4485478));
 }
