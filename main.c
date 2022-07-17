@@ -3,5 +3,5 @@
 
 int main()
 {
-    printf("%d",ft_printf("%p%p","rgtrh","ggrdefr"));
+    printf("%d",ft_printf("%i%i",7546,4645));
 }

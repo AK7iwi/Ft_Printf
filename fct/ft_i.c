@@ -6,7 +6,7 @@
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/15 22:43:55 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/07/17 21:26:40 by mfeldman         ###   ########.fr       */
+/*   Updated: 2022/07/17 21:54:55 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,6 @@
 
 int	ft_i(int nb)
 {
-	
 	ft_putnbr_fd(nb,1);
-	return(ft_intlen(nb));
-	
+	return(14);
 }
