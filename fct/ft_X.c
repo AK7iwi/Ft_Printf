@@ -6,7 +6,7 @@
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/15 23:09:58 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/07/17 21:56:24 by mfeldman         ###   ########.fr       */
+/*   Updated: 2022/07/17 23:42:24 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,10 @@
 
 int ft_X(unsigned int nb)
 {
+	int a;
 	unsigned long long int nb2 = (unsigned long long int)nb;
 	
+	a = ft_hexlen(nb2);
 	ft_putnbr_base(nb2,"0123456789ABCDEF");
-	return(14);
+	return(a);
 }
