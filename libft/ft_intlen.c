@@ -1,40 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr_ifd.c                                    :+:      :+:    :+:   */
+/*   ft_intlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/17 01:30:25 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/07/17 02:33:09 by mfeldman         ###   ########.fr       */
+/*   Created: 2022/07/17 20:03:01 by mfeldman          #+#    #+#             */
+/*   Updated: 2022/07/17 20:05:29 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_putnbr_ifd(int n, int fd)
+size_t	ft_intlen(int nb)
 {
-    int i;
-    i = 0;
-	long long	b;
+	size_t	i;
 
-	b = n;
-	if (b < 0)
-	{
-		ft_putchar_fd('-', fd);
-		b *= -1;
-        i++;
-	}
-	if (b <= 9)
-    {
-		ft_putchar_fd('0' + b, fd);
-        i++;
-    }
-	else if (b > 9)
-	{
-		ft_putnbr_ifd(b / 10, fd);
-		ft_putchar_fd('0' + b % 10, fd);
+	i = 0;
+	while (nb)
 		i++;
-	}
-    return(i);
+        nb = nb / 10;
+	return (i);
 }

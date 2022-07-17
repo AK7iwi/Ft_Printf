@@ -14,5 +14,6 @@
 
 int	ft_d(int nb)
 {
-	return(ft_putnbr_ifd(nb,1));
+	ft_putnbr_fd(nb,1);
+	return(ft_intlen(nb));
 }
