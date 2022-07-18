@@ -46,7 +46,8 @@ int		ft_printf(const char *str, ...)
 	va_list	ap;
 	va_start(ap,*str);
 	
-	while(str[i] != '\0')
+	while(str[i] != '\0'
+	)
 	{
 		if(str[i] == '%')
 		{    

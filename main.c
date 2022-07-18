@@ -6,7 +6,7 @@
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/18 04:46:30 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/07/18 05:26:30 by mfeldman         ###   ########.fr       */
+/*   Updated: 2022/07/18 05:46:56 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 int main()
 {
-    printf("%d",ft_printf("%c",99));
+    printf("%d",ft_printf("%s", "oui"));
     printf("\n");
-    printf("%d",printf("%c",99));
+    printf("%d",printf("%s", "oui"));
 }
