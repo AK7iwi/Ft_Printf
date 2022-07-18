@@ -14,10 +14,9 @@
 
 int	ft_p(void *str)
 {
-	int a;
 	unsigned long long int str2 = (unsigned long long int)str;
- 	a = ft_hexlen(str2);
+	int a = ft_hexlen(str2);
 	write(1, "0x",2);
 	ft_putnbr_base(str2,"0123456789abcdef");
-	return(a + 6);
+	return(a);
 }

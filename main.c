@@ -1,9 +1,21 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/07/18 04:46:30 by mfeldman          #+#    #+#             */
+/*   Updated: 2022/07/18 04:53:17 by mfeldman         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdio.h>
 #include "ft_printf.h"
 
 int main()
 {
-    printf("%d",ft_printf("%p","gr5gt4r4g4e"));
+    printf("%d",ft_printf("%p","reeee"));
     printf("\n");
-    printf("%d",printf("%p","gr5gt4r4g4e"));
+    printf("%d",printf("%c",728798));
 }

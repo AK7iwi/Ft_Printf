@@ -6,13 +6,13 @@
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/17 20:59:17 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/07/17 23:06:47 by mfeldman         ###   ########.fr       */
+/*   Updated: 2022/07/18 03:52:13 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_hexlen(int nb)
+size_t	ft_hexlen(unsigned int nb)
 {
 	size_t	i;
 
