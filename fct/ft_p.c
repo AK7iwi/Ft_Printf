@@ -14,11 +14,15 @@
 
 int	ft_p(void *str)
 {
-	int i;
-	unsigned long long int str2 = (unsigned long long int)str;
+	unsigned long long int str1 = (unsigned long long int)str;
+	int i = ft_hexlen(str1);
 
-	i = ft_hexlen(str2);
+	if (!str1)
+    {
+        write(1,"(nil)",5);
+        return(5);
+    }
 	ft_putstr_fd("0x",1);
-	ft_putnbr_base(str2,"0123456789abcdef");	
+	ft_putnbr_base(str1,"0123456789abcdef");	
 	return(i + 2);
 }

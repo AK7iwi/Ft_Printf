@@ -6,7 +6,7 @@
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/17 20:03:01 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/07/17 23:06:56 by mfeldman         ###   ########.fr       */
+/*   Updated: 2022/07/19 22:07:56 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ size_t	ft_intlen(int nb)
 	size_t	i;
 
 	i = 0;
+	if (nb == 0)
+		return(1);
 	while (nb)
 	{
 		i++;

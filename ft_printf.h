@@ -15,6 +15,7 @@
 
 # include "./libft/libft.h"
 # include <stdarg.h>
+#include <limits.h>
 
 int		ft_printf(const char *str, ...);
 int		first_param(const char str1, va_list ap);
