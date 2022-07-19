@@ -6,7 +6,7 @@
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/15 20:19:32 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/07/18 05:36:20 by mfeldman         ###   ########.fr       */
+/*   Updated: 2022/07/19 02:47:42 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,7 @@
 
 int ft_c(int i)
 {
-    unsigned char *str = ft_itoua(i) ;
-    
-    write(1,  str  , 1);
+    unsigned char str = (unsigned char)(i);
+    ft_putchar_fdu(str,1);
     return(1);
 }

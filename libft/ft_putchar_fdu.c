@@ -1,21 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_putchar_fdu.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/18 04:46:30 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/07/18 06:13:05 by mfeldman         ###   ########.fr       */
+/*   Created: 2022/07/19 02:46:47 by mfeldman          #+#    #+#             */
+/*   Updated: 2022/07/19 02:47:02 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include "ft_printf.h"
+#include "libft.h"
 
-int main()
+void	ft_putchar_fdu(unsigned char c, int fd)
 {
-    printf("%d",ft_printf("%c", 99));
-    printf("\n");
-    printf("%d",printf("%c", 99));
+	write(fd, &c, 1);
 }
