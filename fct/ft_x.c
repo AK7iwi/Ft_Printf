@@ -14,12 +14,11 @@
 
 int ft_x(unsigned int nb)
 {
-	int a;
 	unsigned long long int nb2 = (unsigned long long int)nb;
-	
-	a = ft_hexlen(nb2);
+	int i = ft_hexlen(nb2);
+
 	ft_putnbr_base(nb2,"0123456789abcdef");
 	if (nb == 0)
 		return(1);
-	return(a);
+	return(i);
 }

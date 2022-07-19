@@ -14,10 +14,11 @@
 
 int	ft_u(unsigned int nb)
 {
-	unsigned int i = nb; 
+	unsigned int i = ft_uintlen(nb); 
+	
 	ft_putnbr_fdu(nb,1);
 	if (nb == 0)
 		return(1);
-	return(ft_uintlen(i));
+	return(i);
 	
 }

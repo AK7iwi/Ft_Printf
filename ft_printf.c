@@ -27,11 +27,11 @@ int	first_param(const char str1, va_list ap)
 	if (str1 == 'i')
 		j += ft_i(va_arg(ap,int));
 	if (str1 == 'u')
-		j += ft_u(va_arg(ap, unsigned int ));
+		j += ft_u(va_arg(ap, unsigned int));
 	if (str1 == 'x')
-		j += ft_x(va_arg(ap, unsigned int ));
+		j += ft_x(va_arg(ap, unsigned int));
 	if (str1 == 'X')
-		j += ft_X(va_arg(ap, unsigned int ));
+		j += ft_X(va_arg(ap, unsigned int));
 	if (str1 == '%')
 		j += ft_pour();
 	return(j);
