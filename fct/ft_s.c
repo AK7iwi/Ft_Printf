@@ -6,7 +6,7 @@
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/15 20:23:12 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/07/19 03:26:00 by mfeldman         ###   ########.fr       */
+/*   Updated: 2022/07/19 05:27:06 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,8 @@
 
 int ft_s(const char *str)
 {
-    if (str)
-    {
-        write(1, str,ft_strlen(str));
-    }
-    else 
-        return(0);
+    if (!str)
+        return(-1);
+    write(1, str,ft_strlen(str));
     return(ft_strlen(str));
 }
