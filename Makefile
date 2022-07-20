@@ -10,8 +10,7 @@ SRCS			=  ft_printf.c  main.c ./fct/ft_c.c ./fct/ft_s.c ./fct/ft_p.c ./fct/ft_d.
 
 $(NAME):		$(OBJS)
 				make -C ./libft 
-				cp libft/libft.a $(NAME)
-				$(CC) $(SRCS)  $(LDLIBS) $(CFLAGS) 
+				cp libft/libft.a $(NAME) 
 				ar rcs $(NAME) $(OBJS)
 
 all:			$(NAME) 

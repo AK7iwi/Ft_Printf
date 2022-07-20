@@ -21,7 +21,7 @@ int	first_param(const char str1, va_list ap)
 	if (str1 == 's')
 		j += ft_s(va_arg(ap,const char *));
 	if (str1 == 'p')
-		j += ft_p(va_arg(ap,unsigned long *));
+		j += ft_p(va_arg(ap,unsigned long long int *));
 	if (str1 == 'd')
 		j += ft_d(va_arg(ap,int));
 	if (str1 == 'i')
@@ -41,11 +41,11 @@ int		ft_printf(const char *str, ...)
 {
 	int     i;
 	int     len;
+
 	i = 0;
 	len = 0;
 	va_list	ap;
 	va_start(ap,*str);
-	
 	while(str[i] != '\0')
 	{
 		if(str[i] == '%')
