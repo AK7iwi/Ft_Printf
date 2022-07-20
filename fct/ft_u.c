@@ -13,10 +13,8 @@
 #include "ft_printf.h"
 
 int	ft_u(unsigned int nb)
-{
-	unsigned int i = ft_uintlen(nb); 
-
+{ 
 	ft_putnbr_fdu(nb,1);
-	return(i);
+	return(ft_uintlen(nb));
 	
 }

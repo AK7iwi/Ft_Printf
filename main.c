@@ -3,6 +3,6 @@
 #include <limits.h>
 int main()
 {
-    printf("%d", ft_printf(" %p ",LONG_MAX));
+    printf("%d", ft_printf(" %p %p ", LONG_MIN, LONG_MAX));
     printf("\n");
 }

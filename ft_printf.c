@@ -21,7 +21,7 @@ int	first_param(const char str1, va_list ap)
 	if (str1 == 's')
 		j += ft_s(va_arg(ap,const char *));
 	if (str1 == 'p')
-		j += ft_p(va_arg(ap, void *));
+		j += ft_p(va_arg(ap,unsigned long *));
 	if (str1 == 'd')
 		j += ft_d(va_arg(ap,int));
 	if (str1 == 'i')

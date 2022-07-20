@@ -19,7 +19,7 @@ int	ft_p(void *str)
 
 	if (!str1)
     {
-        write(1,"(nil)",5);
+		ft_putstr_fd("(nil)",1);
         return(5);
     }
 	ft_putstr_fd("0x",1);
