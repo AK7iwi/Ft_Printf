@@ -15,18 +15,17 @@
 
 # include "./libft/libft.h"
 # include <stdarg.h>
-#include <limits.h>
 
 int		ft_printf(const char *str, ...);
 int		first_param(const char str1, va_list ap);
-int	ft_c(int i);
-int	ft_s(const char *str);
-int	ft_p( unsigned long long int *str);
-int	ft_d(int nb);
-int	ft_i(int nb);
-int	ft_u(unsigned int nb);
-int	ft_x(unsigned int nb);
-int	ft_X(unsigned int nb);
-int	ft_pour();
+int		ft_c(int i);
+int		ft_s(const char *str);
+int		ft_p( unsigned long long int *str);
+int		ft_d(int nb);
+int		ft_i(int nb);
+int		ft_u(unsigned int nb);
+int		ft_x(unsigned int nb);
+int		ft_xmaj(unsigned int nb);
+int		ft_pour(void);
 
 #endif

@@ -6,23 +6,23 @@
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/17 20:10:36 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/07/19 22:08:02 by mfeldman         ###   ########.fr       */
+/*   Updated: 2022/07/21 02:45:53 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t  ft_uintlen(unsigned int nb)
+size_t	ft_uintlen(unsigned int nb)
 {
 	size_t	i;
 
 	i = 0;
 	if (nb == 0)
-		return(1);
+		return (1);
 	while (nb)
 	{
 		i++;
-        nb = nb / 10;
+		nb = nb / 10;
 	}
 	return (i);
 }

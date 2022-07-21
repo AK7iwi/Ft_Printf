@@ -6,15 +6,17 @@
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/15 20:19:32 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/07/19 02:47:42 by mfeldman         ###   ########.fr       */
+/*   Updated: 2022/07/21 02:20:55 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int ft_c(int i)
+int	ft_c(int i)
 {
-    unsigned char str = (unsigned char)(i);
-    ft_putchar_fdu(str,1);
-    return(1);
+	unsigned char	str;
+
+	str = (unsigned char)(i);
+	ft_putchar_fdu (str, 1);
+	return (1);
 }

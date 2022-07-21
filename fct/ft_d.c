@@ -14,10 +14,11 @@
 
 int	ft_d(int nb)
 {
-	int i = ft_intlen(nb); 
-	
-	ft_putnbr_fd(nb,1);
+	int		i;
+
+	i = ft_intlen (nb);
+	ft_putnbr_fd (nb, 1);
 	if (nb < 0)
-		return(i + 1);
-	return(i);
+		return (i + 1);
+	return (i);
 }

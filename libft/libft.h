@@ -6,7 +6,7 @@
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/05 09:41:57 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/07/21 01:24:05 by mfeldman         ###   ########.fr       */
+/*   Updated: 2022/07/21 02:48:34 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ int		ft_isascii(int c);
 int		ft_isprint(int c);
 size_t	ft_strlen(const char *s);
 size_t	ft_intlen(int nb);
-size_t 	ft_uintlen(unsigned int nb);
+size_t	ft_uintlen(unsigned int nb);
 size_t	ft_hexlen(unsigned long long int nb);
 void	*ft_memset(void *s, int c, size_t n);
 void	ft_bzero(void *s, size_t n);

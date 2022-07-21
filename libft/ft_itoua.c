@@ -6,7 +6,7 @@
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/18 10:32:39 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/07/15 20:50:57 by mfeldman         ###   ########.fr       */
+/*   Updated: 2022/07/21 02:47:37 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,8 +37,8 @@ static int	ft_len(long long nb)
 unsigned char	*ft_itoua(int nb)
 {
 	unsigned char		*dest;
-	long long	n;
-	int			size;
+	long long			n;
+	int					size;
 
 	n = nb;
 	size = ft_len(n);
