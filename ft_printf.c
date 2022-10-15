@@ -32,7 +32,7 @@ int	first_param(const char str1, va_list ap)
 	if (str1 == 'x')
 		j += ft_x(va_arg(ap, unsigned int));
 	if (str1 == 'X')
-		j += ft_xmaj(va_arg(ap, unsigned int));
+		j += ft_xmaj(va_arg(ap, unsigned int));8
 	if (str1 == '%')
 		j += ft_pour();
 	return (j);
