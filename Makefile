@@ -11,9 +11,12 @@ SRCS			=  ft_printf.c  ./fct/ft_c.c ./fct/ft_s.c ./fct/ft_p.c ./fct/ft_d.c\
 $(NAME):		$(OBJS)
 				make -C ./libft 
 				cp libft/libft.a $(NAME)
-				ar rcs $(NAME) $(OBJS)
+#				$(CC) $(SRCS) $(LDLIBS) $(CFLAGS) (Pour main et avoir l'executable)
+				ar rcs  $(NAME) $(OBJS) 
 
 all:			$(NAME) 
+
+
 
 clean:			
 				$(RM) $(OBJS)
@@ -25,3 +28,4 @@ fclean:	 		clean
 re:				fclean $(NAME)
 
 .PHONY:			all clean fclean re
+
