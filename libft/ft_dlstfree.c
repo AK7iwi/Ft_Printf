@@ -1,28 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_dlstfree.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/11 21:50:46 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/12/13 02:03:35 by mfeldman         ###   ########.fr       */
+/*   Created: 2022/11/29 22:06:48 by mfeldman          #+#    #+#             */
+/*   Updated: 2022/12/13 02:21:44 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcpy(char *dst, const char *src, size_t size)
-{
-	size_t	i;
+/*Free la liste doublement chainee*/
 
-	i = 0;
-	while (src[i] && i < size - 1 && size != 0)
+void	ft_dlstfree(t_listdc *l)
+{
+	t_stack	*tmp;
+	t_stack	*pelem;
+
+	pelem = l->first;
+	while (pelem)
 	{
-		dst[i] = src[i];
-		i++;
+		tmp = pelem;
+		pelem = pelem->next;
+		free (tmp);
 	}
-	if (size > 0)
-		dst[i] = '\0';
-	return (ft_strlen(src));
+	l->first = NULL;
+	l->last = NULL;
 }

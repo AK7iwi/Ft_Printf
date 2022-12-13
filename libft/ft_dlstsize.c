@@ -1,28 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_dlstsize.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mfeldman <mfeldman@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/11 21:50:46 by mfeldman          #+#    #+#             */
-/*   Updated: 2022/12/13 02:03:35 by mfeldman         ###   ########.fr       */
+/*   Created: 2022/12/06 23:21:46 by mfeldman          #+#    #+#             */
+/*   Updated: 2022/12/13 02:19:29 by mfeldman         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcpy(char *dst, const char *src, size_t size)
+/*Taille liste chainee*/
+
+int	ft_dlstsize(t_listdc *l)
 {
-	size_t	i;
+	int		i;
+	t_stack	*pelem;
 
 	i = 0;
-	while (src[i] && i < size - 1 && size != 0)
+	pelem = l->first;
+	while (pelem)
 	{
-		dst[i] = src[i];
 		i++;
+		pelem = pelem->next;
 	}
-	if (size > 0)
-		dst[i] = '\0';
-	return (ft_strlen(src));
+	return (i);
 }
