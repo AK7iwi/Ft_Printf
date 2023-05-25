@@ -7,16 +7,13 @@ LDLIBS 			= ./libft/libft.a
 SRCS			=  ft_printf.c  ./fct/ft_c.c ./fct/ft_s.c ./fct/ft_p.c ./fct/ft_d.c\
 					./fct/ft_i.c ./fct/ft_u.c ./fct/ft_x.c ./fct/ft_xmaj.c ./fct/ft_pour.c\
 
+all:			$(NAME) 
 
 $(NAME):		$(OBJS)
 				make -C ./libft 
 				cp libft/libft.a $(NAME)
 #				$(CC) $(SRCS) $(LDLIBS) $(CFLAGS) (Pour main et avoir l'executable)
 				ar rcs  $(NAME) $(OBJS) 
-
-all:			$(NAME) 
-
-
 
 clean:			
 				$(RM) $(OBJS)
