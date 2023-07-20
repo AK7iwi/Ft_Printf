@@ -13,8 +13,12 @@
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
 
-# include "./libft/libft.h"
 # include <stdarg.h>
+# include <stddef.h>
+# include <stdlib.h>
+# include <unistd.h>
+# include <string.h>
+# include <stdio.h>
 
 int		ft_printf(const char *str, ...);
 int		first_param(const char str1, va_list ap);
@@ -27,5 +31,17 @@ int		ft_u(unsigned int nb);
 int		ft_x(unsigned int nb);
 int		ft_xmaj(unsigned int nb);
 int		ft_pour(void);
+
+size_t	ft_strlen(const char *s);
+size_t	ft_intlen(int nb);
+size_t	ft_uintlen(unsigned int nb);
+size_t	ft_hexlen(unsigned long long int nb);
+
+void	ft_putchar_fd(char c, int fd);
+void	ft_putchar_fdu(unsigned char c, int fd);
+void	ft_putstr_fd(char *s, int fd);
+void	ft_putnbr_fd(int n, int fd);
+void	ft_putnbr_fdu(unsigned int n, int fd);
+void	ft_putnbr_base(unsigned long long int nb, char *base);
 
 #endif
