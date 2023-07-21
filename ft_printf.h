@@ -22,6 +22,7 @@
 
 int		ft_printf(const char *str, ...);
 int		first_param(const char str1, va_list ap);
+
 int		ft_c(int i);
 int		ft_s(const char *str);
 int		ft_p( unsigned long long int *str);
