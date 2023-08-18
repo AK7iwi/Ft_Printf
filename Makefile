@@ -10,7 +10,7 @@ OBJS			= $(SRCS:.c=.o)
 all:			$(NAME) 
 
 $(NAME):		$(OBJS)
-#				$(CC) $(SRCS) $(CFLAGS) (Pour main et avoir l'executable)
+#				$(CC) $(NAME) $(SRCS) $(CFLAGS) (Pour main et avoir l'executable)
 				ar rcs  $(NAME) $(OBJS) 
 
 clean:			
