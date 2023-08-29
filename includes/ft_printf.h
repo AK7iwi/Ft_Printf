@@ -23,7 +23,7 @@
 /* Srcs  */
 
 int		ft_printf(const char *str, ...);
-int		first_param(const char str1, va_list ap);
+int		first_param(const char str, va_list ap);
 
 /* Fct */
 

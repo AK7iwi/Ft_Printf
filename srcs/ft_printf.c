@@ -12,28 +12,28 @@
 
 #include "ft_printf.h"
 
-int	first_param(const char str1, va_list ap)
+int	first_param(const char str, va_list ap)
 {
 	int		j;
 
 	j = 0;
-	if (str1 == 'c')
+	if (str == 'c')
 		j += ft_c(va_arg(ap, int));
-	if (str1 == 's')
+	if (str == 's')
 		j += ft_s(va_arg(ap, const char *));
-	if (str1 == 'p')
+	if (str == 'p')
 		j += ft_p(va_arg(ap, unsigned long long int *));
-	if (str1 == 'd')
+	if (str == 'd')
 		j += ft_d(va_arg(ap, int));
-	if (str1 == 'i')
+	if (str == 'i')
 		j += ft_i(va_arg(ap, int));
-	if (str1 == 'u')
+	if (str == 'u')
 		j += ft_u(va_arg(ap, unsigned int));
-	if (str1 == 'x')
+	if (str == 'x')
 		j += ft_x(va_arg(ap, unsigned int));
-	if (str1 == 'X')
+	if (str == 'X')
 		j += ft_xmaj(va_arg(ap, unsigned int));
-	if (str1 == '%')
+	if (str == '%')
 		j += ft_pour();
 	return (j);
 }
