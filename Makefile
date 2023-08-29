@@ -1,16 +1,17 @@
 CC				= gcc 
 RM				= rm -f
-CFLAGS			= -Wall -Wextra -Werror -I.
+CFLAGS			= -Wall -Wextra -Werror -I./includes
 NAME			= libftprintf.a
-SRCS			=  ft_printf.c utils.c utils2.c ./fct/ft_c.c ./fct/ft_s.c ./fct/ft_p.c ./fct/ft_d.c\
-					./fct/ft_i.c ./fct/ft_u.c ./fct/ft_x.c ./fct/ft_xmaj.c ./fct/ft_pour.c\
+SRCS			=	./srcs/ft_printf.c ./utils/utils.c ./utils/utils2.c ./srcs/fct/ft_c.c \
+					./srcs/fct/ft_s.c ./srcs/fct/ft_p.c ./srcs/fct/ft_d.c ./srcs/fct/ft_i.c \
+					./srcs/fct/ft_u.c ./srcs/fct/ft_x.c ./srcs/fct/ft_xmaj.c ./srcs/fct/ft_pour.c\
 					
 OBJS			= $(SRCS:.c=.o)
 
 all:			$(NAME) 
 
 $(NAME):		$(OBJS)
-#				$(CC) $(NAME) $(SRCS) $(CFLAGS) (Pour main et avoir l'executable)
+				# $(CC) -o $(NAME) $(SRCS) $(CFLAGS) (to get the exec: uncomment + sup .a + comment the line below)
 				ar rcs  $(NAME) $(OBJS) 
 
 clean:			

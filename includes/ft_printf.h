@@ -20,8 +20,12 @@
 # include <string.h>
 # include <stdio.h>
 
+/* Srcs  */
+
 int		ft_printf(const char *str, ...);
 int		first_param(const char str1, va_list ap);
+
+/* Fct */
 
 int		ft_c(int i);
 int		ft_s(const char *str);
@@ -33,11 +37,12 @@ int		ft_x(unsigned int nb);
 int		ft_xmaj(unsigned int nb);
 int		ft_pour(void);
 
+/* Utils */
+
 size_t	ft_strlen(const char *s);
 size_t	ft_intlen(int nb);
 size_t	ft_uintlen(unsigned int nb);
 size_t	ft_hexlen(unsigned long long int nb);
-
 void	ft_putchar_fd(char c, int fd);
 void	ft_putchar_fdu(unsigned char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
